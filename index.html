@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Link external JavaScript file -->
+    <script src="script.js" defer></script>
+    <!-- CSS styles for demonstration purposes -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        canvas {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Web Page</h1>
+    
+    <div class="container">
+        <button onclick="performCalculations()">Perform Calculations</button>
+        <div id="result"></div>
+    </div>
+
+    <div class="container">
+        <h2>Chart Example</h2>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+</body>
+</html>
+
